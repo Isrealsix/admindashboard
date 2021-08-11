@@ -1,4 +1,17 @@
-import { LineStyle, Timeline, TrendingUp } from '@material-ui/icons';
+import {
+	LineStyle,
+	Timeline,
+	TrendingUp,
+	PermIdentity,
+	Storefront,
+	AttachMoney,
+	BarChart,
+	MailOutline,
+	DynamicFeed,
+	ChatBubbleOutline,
+	WorkOutline,
+	Report,
+} from '@material-ui/icons';
 import classes from './Sidebar.module.css';
 
 function Sidebar() {
@@ -27,19 +40,19 @@ function Sidebar() {
 					<h3 className={classes.sidebarTitle}>Quick Menu</h3>
 					<ul className={classes.sidebarList}>
 						<li className={classes.sidebarListItem}>
-							<LineStyle className={classes.sidebarIcon} />
+							<PermIdentity className={classes.sidebarIcon} />
 							Users
 						</li>
 						<li className={classes.sidebarListItem}>
-							<Timeline className={classes.sidebarIcon} />
+							<Storefront className={classes.sidebarIcon} />
 							Products
 						</li>
 						<li className={classes.sidebarListItem}>
-							<TrendingUp className={classes.sidebarIcon} />
+							<AttachMoney className={classes.sidebarIcon} />
 							Transactions
 						</li>
 						<li className={classes.sidebarListItem}>
-							<TrendingUp className={classes.sidebarIcon} />
+							<BarChart className={classes.sidebarIcon} />
 							Reports
 						</li>
 					</ul>
@@ -49,15 +62,15 @@ function Sidebar() {
 					<h3 className={classes.sidebarTitle}>Notifications</h3>
 					<ul className={classes.sidebarList}>
 						<li className={classes.sidebarListItem}>
-							<LineStyle className={classes.sidebarIcon} />
+							<MailOutline className={classes.sidebarIcon} />
 							Mail
 						</li>
 						<li className={classes.sidebarListItem}>
-							<Timeline className={classes.sidebarIcon} />
+							<DynamicFeed className={classes.sidebarIcon} />
 							Feedback
 						</li>
 						<li className={classes.sidebarListItem}>
-							<TrendingUp className={classes.sidebarIcon} />
+							<ChatBubbleOutline className={classes.sidebarIcon} />
 							Messages
 						</li>
 					</ul>
@@ -67,7 +80,7 @@ function Sidebar() {
 					<h3 className={classes.sidebarTitle}>Staff</h3>
 					<ul className={classes.sidebarList}>
 						<li className={classes.sidebarListItem}>
-							<LineStyle className={classes.sidebarIcon} />
+							<WorkOutline className={classes.sidebarIcon} />
 							Manage
 						</li>
 						<li className={classes.sidebarListItem}>
@@ -75,7 +88,7 @@ function Sidebar() {
 							Analytics
 						</li>
 						<li className={classes.sidebarListItem}>
-							<TrendingUp className={classes.sidebarIcon} />
+							<Report className={classes.sidebarIcon} />
 							Reports
 						</li>
 					</ul>
