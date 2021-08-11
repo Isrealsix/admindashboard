@@ -1,11 +1,17 @@
+import { Fragment } from 'react';
+import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/Topbar';
+import classes from './App.module.css';
 
 function App() {
 	return (
-		<div className="App">
+		<Fragment>
 			<Topbar />
-			<h1>Hello Motto</h1>
-		</div>
+			<div className={classes.container}>
+				<Sidebar />
+				<div className={classes.others}>Other pg</div>
+			</div>
+		</Fragment>
 	);
 }
 
