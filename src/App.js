@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/Topbar';
 import classes from './App.module.css';
+import Home from './pages/home/Home';
 
 function App() {
 	return (
@@ -9,7 +10,7 @@ function App() {
 			<Topbar />
 			<div className={classes.container}>
 				<Sidebar />
-				<div className={classes.others}>other item</div>
+				<Home />
 			</div>
 		</Fragment>
 	);
