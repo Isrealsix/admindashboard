@@ -9,7 +9,7 @@ function App() {
 			<Topbar />
 			<div className={classes.container}>
 				<Sidebar />
-				<div className={classes.others}>Other pg</div>
+				<div className={classes.others}>other item</div>
 			</div>
 		</Fragment>
 	);
