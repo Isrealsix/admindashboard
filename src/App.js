@@ -4,6 +4,7 @@ import Topbar from './components/Topbar';
 import classes from './App.module.css';
 import Home from './pages/home/Home';
 import UserList from './pages/userList/UserList';
+import User from './pages/user/User';
 
 function App() {
 	return (
@@ -18,6 +19,10 @@ function App() {
 
 					<Route path="/users">
 						<UserList />
+					</Route>
+
+					<Route path="/user/:userId">
+						<User />
 					</Route>
 				</Switch>
 			</div>
