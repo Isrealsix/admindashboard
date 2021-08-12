@@ -1,7 +1,5 @@
-import { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { DeleteOutline } from '@material-ui/icons';
 import classes from './UserList.module.css';
+import Actions from './Actions';
 
 export const userRows = [
 	{
@@ -142,13 +140,6 @@ export const userColumns = [
 		field: 'action',
 		headerName: 'Action',
 		width: 150,
-		renderCell: params => (
-			<Fragment>
-				<Link to={`/user/${params.row.id}`}>
-					<button className={classes.userListEdit}>Edit</button>
-				</Link>
-				<DeleteOutline className={classes.userListDelete} />
-			</Fragment>
-		),
+		renderCell: params => <Actions id={params.row.id} />,
 	},
 ];
