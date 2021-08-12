@@ -59,3 +59,25 @@ export const activityData = [
 		Activity: 1000,
 	},
 ];
+
+export const productData = [
+	{
+		name: 'Jan',
+		Activity: 4000,
+	},
+
+	{
+		name: 'Feb',
+		Activity: 3000,
+	},
+
+	{
+		name: 'Mar',
+		Activity: 5000,
+	},
+
+	{
+		name: 'Apr',
+		Activity: 4000,
+	},
+];
