@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
 	CalendarToday,
 	LocationSearching,
@@ -13,7 +14,9 @@ const User = () => {
 		<div className={classes.user}>
 			<div className={classes.userTitleContainer}>
 				<h1 className={classes.userTitle}>Edit User</h1>
-				<button className={classes.userAddButton}>Create</button>
+				<Link to="/newUser">
+					<button className={classes.userAddButton}>Create</button>
+				</Link>
 			</div>
 			<div className={classes.userContainer}>
 				<div className={classes.userShow}>
