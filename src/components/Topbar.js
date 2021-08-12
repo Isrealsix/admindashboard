@@ -8,7 +8,7 @@ function Topbar() {
 			<div className={classes.topbar}>
 				<div className={classes.topbarWrapper}>
 					<div className={classes.topLeft}>
-						<span className={classes.logo}>i6 Admin</span>
+						<span className={classes.logo}>@Isrealsix</span>
 					</div>
 					<div className={classes.topRight}>
 						<div className={classes.topbarIconContainer}>
