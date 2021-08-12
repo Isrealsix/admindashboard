@@ -34,7 +34,7 @@
     border-radius: 10px;
 }
 
-.sidebarListItem__active,
+.sidebarListItem--active,
 .sidebarListItem:hover {
     background-color: rgb(225, 228, 250);
 }
