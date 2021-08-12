@@ -22,12 +22,14 @@ function Sidebar() {
 				<div className={classes.sidebarMenu}>
 					<h3 className={classes.sidebarTitle}>Dashboard</h3>
 					<ul className={classes.sidebarList}>
-						<li
-							className={`${classes.sidebarListItem} ${classes['sidebarListItem--active']}`}
-						>
-							<LineStyle className={classes.sidebarIcon} />
-							Home
-						</li>
+						<Link to="/" className="link">
+							<li
+								className={`${classes.sidebarListItem} ${classes['sidebarListItem--active']}`}
+							>
+								<LineStyle className={classes.sidebarIcon} />
+								Home
+							</li>
+						</Link>
 						<li className={classes.sidebarListItem}>
 							<Timeline className={classes.sidebarIcon} />
 							Analytics
