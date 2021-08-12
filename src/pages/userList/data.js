@@ -1,5 +1,5 @@
-import classes from './UserList.module.css';
 import Actions from './Actions';
+import PhotoUsername from './PhotoUsername';
 
 export const userRows = [
 	{
@@ -111,10 +111,10 @@ export const userColumns = [
 		width: 150,
 		editable: true,
 		renderCell: params => (
-			<div className={classes.userListUser}>
-				<img src={params.row.avatar} alt="" className={classes.userListImg} />
-				{params.row.username}
-			</div>
+			<PhotoUsername
+				avatar={params.row.avatar}
+				username={params.row.username}
+			/>
 		),
 	},
 	{
