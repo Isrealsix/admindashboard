@@ -1,18 +1,27 @@
-import { Fragment } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/Topbar';
 import classes from './App.module.css';
 import Home from './pages/home/Home';
+import UserList from './pages/userList/UserList';
 
 function App() {
 	return (
-		<Fragment>
+		<Router>
 			<Topbar />
 			<div className={classes.container}>
 				<Sidebar />
-				<Home />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+
+					<Route path="/users">
+						<UserList />
+					</Route>
+				</Switch>
 			</div>
-		</Fragment>
+		</Router>
 	);
 }
 
